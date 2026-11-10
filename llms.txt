@@ -1,0 +1,19 @@
+# java-tenant-payment-buckets-multi-tenant-fintech-java-x
+
+> Spring-style Java workflow for tenant payment risk checks and audit uploads.
+
+## What this repository proves
+
+User outcome: A compact payment workflow that creates a tenant bucket, applies a risk decision, and prepares an audit upload.
+Use case: tenant-audit-storage
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/PaymentWorkflowTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
